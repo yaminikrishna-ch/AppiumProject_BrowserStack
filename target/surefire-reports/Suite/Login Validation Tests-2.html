@@ -1,0 +1,663 @@
+<html>
+<head>
+<title>TestNG:  Login Validation Tests-2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Validation Tests-2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 22 12:10:00 EDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21627 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup()'><b>preSetup</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1030206479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1030206479'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup()'><b>preSetup</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace694093062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace694093062'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup()'><b>preSetup</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1190653437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1190653437'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup()'><b>preSetup</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace406802340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace406802340'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.AndroidLoginPositive()'><b>AndroidLoginPositive</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation<br>Parameters: {name=Su, country=Aruba, gender=male}</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1680779468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1680779468'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.AndroidLoginNegative()'><b>AndroidLoginNegative</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation<br>Parameters: {name=Su, country=Aruba, gender=male}</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace640098180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640098180'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.AndroidLoginPositive()'><b>AndroidLoginPositive</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation<br>Parameters: {name=Yamini, country=Argentina, gender=female}</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1598770764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1598770764'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+<tr>
+<td title='org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.AndroidLoginNegative()'><b>AndroidLoginNegative</b><br>Test class: org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation<br>Parameters: {name=Yamini, country=Argentina, gender=female}</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1675711935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1675711935'><pre>org.openqa.selenium.UnsupportedCommandException: Unknown mobile command &quot;startActivity&quot;. Only shell,scrollBackTo,viewportScreenshot,deepLink,startLogsBroadcast,stopLogsBroadcast,acceptAlert,dismissAlert,batteryInfo,deviceInfo,changePermissions,getPermissions,performEditorAction,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,type commands are supported.
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ef5851f0b878762705b268dfdfa754c5c8ebde3b, executeScript {script=mobile: startActivity, args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.SplashActivity}]}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18082, appium:chromedriverPorts: [[18122, 18132]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, autoGrantPermissions: true, automationName: uiautomator2, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], deviceName: yami_pixel3a_vanilla_v, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 3000, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: 23031FDEE0004Y}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 6 Pro, appium:deviceName: 23031FDEE0004Y, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: 23031FDEE0004Y, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3000, appium:optimalHubUrl: hub-use.browserstack.com, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 145, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: 23031FDEE0004Y, appium:viewportRect: {height: 2789, left: 0, top: 145, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, bstack:options: {buildIdentifier: #1, disableAnimations: true, hostName: Yaminis-MacBook-Air.local, localIdentifier: 22_Mar_129_Yaminis_MacBook_...}, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: ef5851f0b878762705b268dfdfa754c5c8ebde3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation.preSetup(AndroidLoginValidation.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>org.yaminikrishnachalimadugu.AppiumFrameworkDesign.Android.AndroidLoginValidation@5555ffcf</td></tr>
+</table><p>
+</body>
+</html>

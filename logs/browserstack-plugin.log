@@ -1,0 +1,55 @@
+11:27:24.630 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+11:27:24.630 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:27:24.631 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+11:27:24.631 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+11:27:24.631 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:27:24.631 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+11:27:26.285 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+11:27:26.286 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:27:26.287 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+11:27:26.287 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+11:27:26.287 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:27:26.288 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+11:28:32.148 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+11:28:32.191 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=bC9hFW2TC4heXQe3dfqJ, groupId=com.browserstack, BROWSERSTACK_APP=bs://sample.app, BROWSERSTACK_FRAMEWORK=java, version=1.0, PROJECT_NAME=Appium GeneralStores, archetypeVersion=1.5, archetypeGroupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=yaminikrishnacha_94ObAs, BUILD_NAME=browserstack build, BROWSERSTACK_SOURCE=java:appium-eclipse:v1.0.10]
+11:28:45.213 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+11:28:45.213 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:28:45.213 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+11:28:45.213 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+11:28:45.213 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+11:28:45.214 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+12:07:27.531 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+12:07:27.532 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:07:27.532 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+12:07:27.532 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+12:07:27.532 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:07:27.533 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+12:10:57.693 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+12:10:57.694 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:10:57.694 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+12:10:57.694 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+12:10:57.694 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:10:57.694 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+12:22:16.790 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:22:16.792 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:22:16.793 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:22:16.793 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+12:24:40.788 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:24:40.790 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:24:40.791 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:24:40.791 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+12:26:01.051 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:26:01.052 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:26:01.053 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:26:01.053 [Worker-50: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+12:26:46.824 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+12:26:46.839 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+12:26:46.840 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:26:46.840 [Worker-41: Launching AndroidFramework.androidEndToEndFrameworkTest] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.10}
+12:27:58.656 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+12:27:58.657 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:27:58.657 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/AppiumFrameworkDesignCloud
+12:27:58.657 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+12:27:58.657 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+12:27:58.657 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/AppiumFrameworkDesignCloud
+22:53:23.323 [Framework stop - Equinox Container: a27abcc1-9e9c-44d0-9f6a-8b7cf304d6a4] INFO  c.b.BrowserStackPluginActivator - Stopping BrowserStack Plugin...
